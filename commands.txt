@@ -1,0 +1,11 @@
+# create image
+docker build -t abelsan/src .
+
+# run image on external port, the lefthand number is the external port
+docker run -p 1337:1337 -d abelsan/src
+
+# get the image id
+docker ps
+
+# stop image
+docker stop <container id>

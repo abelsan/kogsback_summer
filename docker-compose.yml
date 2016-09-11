@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  kogsback:
+    build: .
+    volumes:
+      - ./src:/src
+    ports:
+      - "1337:1337"
