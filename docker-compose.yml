@@ -7,3 +7,4 @@ services:
       - ./src:/src
     ports:
       - "1337:1337"
+    command: forever -c 'node --harmony' /app/server.js      
